@@ -1,0 +1,29 @@
+.appScreen {
+  @include appWindow;
+  display: flex;
+  flex-direction: column;
+    
+  &__scrollArea {
+    width: 100%;
+    height: 100%;
+    // * We have disabled because we want the scrollArea has to be width 100% when the ControlBar component is not active
+    // height: calc($app-height - $control-panel-gap);
+    display: inline-block;
+    border-radius: $min-br;
+    padding: calc($screen-padding + 15px) calc($screen-padding + 5px) 0;
+
+    & .scrollAreaComponent {
+      width: 100%;
+      height: $screen-height;
+      margin-top: calc($screen-padding + $window);
+
+      & .q-scrollarea__container { border-radius: $min-br; }
+    }
+
+    & .q-tab-panel { padding: 0; }
+  };
+
+  &, &__scrollArea, & .q-tab-panel {
+    background-color: #f6f6f6;
+  }
+}

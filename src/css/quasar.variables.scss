@@ -1,0 +1,42 @@
+// Window max or min zoom position
+$window: 10px;
+
+// borders
+$min-br: 20px;
+
+$app-height: 745px;
+$app-width: 365px;
+
+// Actual App Window sizes to child components
+$actual-app-height: calc($app-height - $window);
+$actual-app-width: calc($app-width - $window);
+
+// screen utils
+$screen-padding: 10px;
+$screen-height: 540px;
+$screen-margin-top: 20px;
+$screen-half: 155px;
+
+// control-panel settings
+$control-panel-gap: 70px;
+
+// button
+$elem-height: 60px;
+
+// toolbar
+$toolbar-height: calc($control-panel-gap + $min-br);
+$toolbar-width: $actual-app-width;
+$toolbar-br: $min-br;
+
+// colors
+$disabled: #bcbcbc;
+$milk: #f6f6f6;
+$black: #212121;
+$orange: #f34236;
+$saved: #da4e59;
+
+// font-sizes
+$sm-f: 14px;
+
+// icons sizes
+$icon-action-size: 28px;

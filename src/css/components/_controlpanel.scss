@@ -1,0 +1,39 @@
+.controlPanel {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+
+  & .q-tabs__content {
+    gap: 20px;
+    align-self: center;
+  }
+
+  & .q-tab {
+    width: 10px;;
+    height: $elem-height;
+    border-radius: $min-br;
+
+    & i, & div { color: $disabled; }
+    & .q-badge { 
+      opacity: .7; 
+      background-color: #f34236;
+
+      &:not(.q-badge--rounded) {
+        border-radius: $min-br;
+        padding: 4px 4px 3px;
+      }
+    }
+
+    &[aria-selected="true"] {
+
+      & i, & div { color: black; }
+      & .q-tab__indicator { opacity: 0; }
+
+      & .q-badge { 
+        opacity: 1;
+        color: white;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,5 @@
+@mixin appWindow() {
+  height: calc($app-height - $window) !important;
+  width: calc($app-width - $window) !important;
+  border-radius: $min-br;
+}

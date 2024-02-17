@@ -1,0 +1,34 @@
+@import "abstracts/mixin";
+
+@import "pages/appscreen";
+@import "pages/homescreen";
+@import "pages/favoritescreen";
+
+@import "components/toolbar";
+@import "components/controlpanel";
+@import "components/productcard";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  background-color: #dbdadd;
+}
+
+// .q-page-container, #q-app, .q-page {
+.container {
+  margin: auto;
+  @include appWindow;
+}
